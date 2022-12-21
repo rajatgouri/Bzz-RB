@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  bzz-rb-app001:
+    build: bzz-app001
+    image: bzznew/bzz-rb-app001:latest
+    stdin_open: true
+    env_file:
+      - bzz-app001/.env
+    ports:
+      - '8000:8000'
+    volumes:
+      - '/app/node_modules'
+    environment:
+      DB_SERVER: 10.30.142.17
+      DB_PORT: 1456
+      DB_NAME: 'HIMSRB'
+      DB_USERNAME: sa
+      DB_PASSWORD: MoonPie1
+      PORT: 8000
+      JWT_SCHEME: jwt
+      JWT_TOKEN_PREFIX: Bearer
+      JWT_SECRET: thiscanbechangedlater123654789
+      JWT_TOKEN_EXPIRATION: 18000000
+      JWT_TOKEN_HASH_ALGO: SHA-256
+      SECRET: hackthoon
+      KEY: bzzdev
+    links:
+      - nats.service
+    depends_on:
+      - nats.service
+#      - mssql
+
+  nats.service:
+    image: nats

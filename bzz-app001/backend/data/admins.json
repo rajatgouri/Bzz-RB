@@ -1,0 +1,30 @@
+[
+    {
+        "EMPID": 1,
+        "UID": "00001",
+        "EMAIL_ADDR":"admin@coh.org",
+        "password":"$2a$10$b4SawTAmasaRQ.iiqDAw0.zZcUQke5oEiQg4E2St.A9SecAh9CKPy",
+        "FIRST_NAME": "Admin",
+        "LAST_NAME": "Test",
+        "ManagementAccess": "Y",
+        "AdminAccess": "Y" ,
+        "EMPL_STATUS": "A",
+        "Section": "AD",
+        "SubSection_A": "AD",
+        "NAME": "Admin"
+    },
+    {
+        "EMPID": 2,
+        "UID": "00002",
+        "EMAIL_ADDR":"bernadette@demo.com",
+        "password":"$2a$10$7mCZ4jN9WECGfJMUTQ74U.HSh4vGPZ1..6EfUWCo2fB1icJRqNggu",
+        "FIRST_NAME": "Bernadette",
+        "LAST_NAME": "Test",
+        "ManagementAccess": "N",
+        "AdminAccess": "N" ,
+        "EMPL_STATUS": "A",
+        "Section": "RB",
+        "SubSection_A": "RBB",
+        "NAME": "Bernadette"
+    }
+]
